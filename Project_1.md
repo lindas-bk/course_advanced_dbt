@@ -1,25 +1,15 @@
-# Welcome to the Bingeflix Data Team
+## Task 2: Doc Blocks
 
-### Coding Conventions
-#### General
-- Use UPPER case for all keywords
-- Use trailing commas in SELECT statements
-- Use Snowflake dialect
-- Use consistent style in GROUP BY and ORDER BY (either names or numbers, not both)
+* Added doc blocks for all appropriate columns and tables in the Bingeflix data source & created a new doc block file for the ads platform called docs_ads_platform.md where I copied the descriptions from the sources
+* Replaced all table and column descriptions in yml with doc blocks 
 
+## Task 3: Project Evaluator
 
-### Testing Conventions
-#### Sources
-- The primary key source column must have not_null and unique generic tests.
-- All boolean columns must have an accepted_values schema test. The accepted values are true and false.
-- Columns that contain category values must have an accepted_values schema test.
-- Columns that should never be null must have a not_null schema test.
-- Columns that should be unique must have a unique schema test.
+* Added missing events in `fct_events.yml` to resolve 4 issues - `valid_documentation_coverage`, `is_empty_fct_undocumented_models_`, `is_empty_fct_missing_primary_key_tests_`, and `valid_test_coverage`
+* Renamed `mmr.sql` to `fct_mrr.sql` to resolve `is_empty_fct_model_naming_conventions_`
+* Added source description to `source_ads_platform.yml` to resolve 2 issues - `is_empty_fct_undocumented_source_tables_` and `is_empty_fct_undocumented_sources_`
+* Added `stg_bingeflix__events` to `dbt_project_evaluator_exceptions.csv` to resolve from `is_empty_fct_model_fanout_`.
+* Added freshness tests on `source_ads_platform.yml` and `source_bingeflix.yml` to resolve `is_empty_fct_sources_without_freshness_`
 
-#### Models
-- The primary key column must have not_null and unique schema tests.
-- All boolean columns must have an accepted_values schema test. The accepted values are true and false.
-- Columns that contain category values must have an accepted_values schema test.
-- Columns that should never be null must have a not_null schema test.
-- Columns that should be unique must have a unique schema test.
-- Where possible, use schema tests from the dbt_utils or dbt_expectations packages to perform extra verification.
+## Task 4: SQLFluff
+* Done, no violations 
