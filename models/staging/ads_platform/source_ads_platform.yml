@@ -1,7 +1,11 @@
 sources:
   - name: ads_platform
     schema: bingeflix
+    freshness:
+      warn_after: {count: 1, period: day}
     database: raw
+    description: This source contains tables from the Ads Platform database
     tables:
       - name: daily_ads
+        description: '{{ doc("ads_platform_daily_ads") }}'
         identifier: ads
