@@ -17,4 +17,3 @@ This section contains documentation from the Ads Platform Daily Ads table.
 {% docs ads_platform_daily_ads_cpm %} The cost charged by the ads platform per thousand impressions. {% enddocs %}
 
 {% docs ads_platform_daily_ads_ctr %} The click through rate on the campaign impressions. {% enddocs %}
-

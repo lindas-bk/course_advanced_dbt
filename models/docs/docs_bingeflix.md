@@ -64,5 +64,3 @@ This section contains documentation from the Bingeflix Subscriptions table.
 {% docs bingeflix_subscriptions_ends_at %} When the subscription ends. This value is NULL if the subscription is active. {% enddocs %}
 
 {% docs bingeflix_subscriptions_subscription_id %} The unique identifier for the subscription. {% enddocs %}
-
-

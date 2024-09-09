@@ -1,7 +1,7 @@
 ## Task 2: Doc Blocks
 
 * Added doc blocks for all appropriate columns and tables in the Bingeflix data source & created a new doc block file for the ads platform called docs_ads_platform.md where I copied the descriptions from the sources
-* Replaced all table and column descriptions in yml with doc blocks 
+* Replaced all table and column descriptions in yml with doc blocks
 
 ## Task 3: Project Evaluator
 
@@ -12,4 +12,4 @@
 * Added freshness tests on `source_ads_platform.yml` and `source_bingeflix.yml` to resolve `is_empty_fct_sources_without_freshness_`
 
 ## Task 4: SQLFluff
-* Done, no violations 
+* Done, no violations
