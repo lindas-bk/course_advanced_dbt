@@ -1,0 +1,16 @@
+macros:
+  - name: lagged_instance
+    description: Applies the lag function to a column within a specified partition and order, with an optional default value for nulls.
+    arguments:
+      - name: column_name
+        type: string
+        description: The name of the column_name.
+      - name: partition_by
+        type: string
+        description: The column to partiton the results by.
+      - name: order_by
+        type: string
+        description: The column to order the results by.
+      - name: default_value
+        type: any
+        description: The value to return if the lagged value is NULL.

@@ -1,0 +1,7 @@
+macros:
+  - name: truncate_monthly
+    description: Truncates a given date to the beginning of its month.
+    arguments:
+      - name: column_name
+        type: string
+        description: The date field to be truncated.

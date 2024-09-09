@@ -44,3 +44,6 @@ models:
         description: The cadence of the billing period.
         data_tests:
           - not_null
+
+      - name: sum_12_periods_billing_period
+        description: The total sum over 12 billing periods.

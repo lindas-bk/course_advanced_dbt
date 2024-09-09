@@ -1,0 +1,12 @@
+
+macros:
+  - name: rolling_average_7_periods
+    description: This macro aggregates a column over a window of 7 periods
+
+    arguments:
+      - name: column_name
+        description: "The column to aggregate."
+      - name: partition_by
+        description: "The column(s) to partition by."
+      - name: order_by
+        description: "The column to order by."

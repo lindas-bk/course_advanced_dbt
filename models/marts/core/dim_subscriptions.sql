@@ -16,4 +16,6 @@ final AS (
             ON s.subscription_plan_id = sp.subscription_plan_id
 )
 
-SELECT * FROM final
+SELECT *
+, {{ rolling_agg_n_periods(column_name='billing_period', partition_by='user_id', order_by='ends_at', agg_func='sum', periods=12) }}
+ FROM final
