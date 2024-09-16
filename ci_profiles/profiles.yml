@@ -21,16 +21,3 @@ course_advanced_dbt:
       database: analytics
       schema: dbt_lindsay
       threads: 10
-
-elementary:
-  outputs:
-    default:
-      type: "snowflake"
-      account: "efruuit-zh04827"
-      user: "lindasun718gmailcom"
-      password: "Matilda21!"
-      role: "transformer"
-      warehouse: "transforming"
-      database: "dev"
-      schema: "production_elementary"
-      threads: 8

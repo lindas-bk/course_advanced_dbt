@@ -39,12 +39,6 @@ models:
       product:
         +schema: product
 
-    elementary:
-    +schema: "elementary"
-    enabled: "{{ target.name in ['prod','analytics'] }}"
-
-
-
 seeds:
   dbt_project_evaluator:
     dbt_project_evaluator_exceptions:
