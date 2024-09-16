@@ -6,5 +6,5 @@ Done here https://github.com/lindas-bk/course_advanced_dbt/blob/project-week3/mo
 ## Task 2: Write a custom generic test to replace a redundant singular test
 Added custom generic test here `assert_valid_event_name` https://github.com/lindas-bk/course_advanced_dbt/blob/project-week3/tests/generic/assert_valid_event_name.sql
 
-
 ## Task 3: Write a unit test to verify the logic of a transformation
+Added unit test here https://github.com/lindas-bk/course_advanced_dbt/blob/project-week3/models/marts/core/dim_users.yml
